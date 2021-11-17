@@ -1,0 +1,88 @@
+
+   [
+        {
+          "order": 16,
+          "image": "adobe.png",
+          "title": "Adobe Suite"   
+        },
+        {
+          "order": 15,
+            "image": "Angular.png",
+            "title": "Angular"   
+          },
+          {
+            "order": 11,
+            "image": "ASP.NET Core.png",
+            "title": "ASP.Net Core"   
+          },
+          {
+            "order": 12,
+            "image": "C#.png",
+            "title": "C#"   
+          },
+          {
+            "order": 13,
+            "image": "C++.png",
+            "title": "C++"   
+          },
+          {
+            "order": 2,
+            "image": "CSS.png",
+            "title": "CSS"   
+          },
+          {
+            "order": 1,
+            "image": "HTML.png",
+            "title": "HTML"   
+          },
+          {
+            "order": 5,
+            "image": "Java.png",
+            "title": "Java"   
+          },
+          {
+            "order": 3,
+            "image": "JavaScript.png",
+            "title": "JavaScript"   
+          },
+          {
+            "order": 10,
+            "image": "MySQL.png",
+            "title": "MySQL"   
+          },
+          {
+            "order": 4,
+            "image": "Node.js.png",
+            "title": "Node.js"   
+          },
+          {
+            "order": 14,
+            "image": "PHP.png",
+            "title": "PHP"   
+          },
+          {
+            "order": 8,
+            "image": "NoSQL.png",
+            "title": "NoSQL"   
+          },
+          {
+            "order": 7,
+            "image": "SQL Server.png",
+            "title": "SQL Server"   
+          },
+          {
+            "order": 19,
+            "image": "Shopify.png",
+            "title": "Shopify"   
+          },
+          {
+            "order": 18,
+            "image": "Squarespace.png",
+            "title": "Squarespace"   
+          },
+          {
+            "order": 6,
+            "image": "Swift.png",
+            "title": "Swift"   
+          }
+    ]
