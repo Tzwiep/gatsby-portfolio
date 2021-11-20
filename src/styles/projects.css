@@ -1,0 +1,42 @@
+/* CSS */
+.link_btn {
+    background-color: #2c3135;
+    color: whitesmoke;
+    
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    border-radius: .5rem;
+    box-sizing: border-box;
+   
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    padding: .75rem 1.25rem;
+    text-align: center;
+    text-decoration: none #c6c9ce solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .link_btn:hover {
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #111827;
+    border: 1px solid transparent; 
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .link_btn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  .link_btn:focus-visible {
+    box-shadow: none;
+  }
+
+

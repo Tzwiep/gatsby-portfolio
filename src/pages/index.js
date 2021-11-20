@@ -10,7 +10,8 @@ import Education from "../components/Education"
 // styles
 const pageStyles = {
   color: "#232129",
-  paddingLeft: "5vw",
+  paddingLeft: "1.5vw",
+
   paddingTop: "3vh",
   marginTop: "1rem",
   screenLeft: "33.33%",
@@ -19,33 +20,37 @@ const pageStyles = {
   backgroundColor: "#ececec"
 }
 
+const titleText = {
+  fontSize: "10vw",
+  marginBottom: "1rem"
+}
+
 
 // markup
 const IndexPage = ( {data} ) => {
   return (
   
-    <main style={pageStyles} className="mx-8">
+    <main style={pageStyles} className="mx-8 pb-8">
       <title>Tyler Zwiep</title>
       <NavLinks/>
-      <h1 className="text-9xl mb-16">Technology</h1>
-      <div className="grid grid-cols-5 gap-2 gap-y-8 justify-center">
-      {data.allFile.edges.map((item, index) => {
-               
-        return <div key={index} className="mx-8 text-center">
+      <h1 style={titleText}>Technology</h1>
+      <div className=" flex flex-row flex-wrap justify-center gap-2 gap-y-8 mb-4 items-baseline">
+      {data.allFile.edges.map((item, index) => { 
+        return <div key={index} className="flex flex-col mx-8 text-center flex-initial">
           <GatsbyImage className="mx-auto mb-2" image={item.node.childImageSharp.gatsbyImageData} alt={item.node.base.split('.png')[0]} />
           {data.allTechnologiesJson.edges.map(jsonData =>{
             if (jsonData.node.image.includes(item.node.base))
-            return <p>{jsonData.node.title}</p>
+            return <p className="font-light">{jsonData.node.title}</p>
           })}
        </div>
-        
+      
        })}
-
-    </div>
-    <h1 className="text-9xl mt-16 mb-8">Work</h1>
+ </div>
+  
+    <h1 style={titleText}>Work</h1>
      <Work />
 
-    <h1 className="text-9xl mt-16 mb-8">Education</h1>
+    <h1 style={titleText}>Education</h1>
     <Education />
     </main>
    

@@ -2,23 +2,33 @@ import React from 'react'
 import { Portrait }  from './Portrait'
 import  ContactButtons  from './contactButtons'
 
+const largeText = {
+fontSize: "4vw",
+fontFamily: "aktiv-grotesk, sans-serif",
+fontWeight: 700,
+fontStyle: "normal",
+color: "#212529",
+marginTop: "1rem",
+marginLeft: "1rem"
+}
+
  const Sidebar = () => {
     return (
-        <div className="fixed flex-col w-2/6 h-full border-black border-r-2">
+        <div className="fixed flex-col w-2/6 h-full border-black border-r">
             <div>
-            <h2 className="text-5xl font-black py-4 mt-8 mx-8">Tyler<br/>Zwiep</h2>
+            <h2 style={largeText} className="text-7xl font-bold pt-4 mt-2 mb-4 mx-8">Tyler<br/>Zwiep</h2>
             <ContactButtons />
-            <p className="text-2xl pl-8 my-2 inline">⬥</p><p className="text-2xl pl-6 my-2 inline">⬥</p> <p className="text-2xl pl-6 my-2 inline">⬥</p><p className="text-2xl pl-6 my-2 inline">⬥</p>
-            <p className="mx-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et malesuada leo, et varius diam. Cras at sapien sed 
-                sem interdum viverra eget sed elit. Praesent congue turpis neque, id facilisis arcu tincidunt vitae. Sed non erat posuere, 
-                tristique lectus quis, eleifend risus. Aenean et sagittis diam. Aliquam malesuada malesuada felis nec malesuada. 
-                Etiam vulputate quam lectus, id interdum mi varius sed. Aenean a lacus fermentum, 
-                congue lorem in, lacinia nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            <p className="text-2xl pl-6 py-6 inline">⬥</p><p className="text-2xl pl-8 py-6 inline">⬥</p> <p className="text-2xl pl-8 py-6 inline">⬥</p><p className="text-2xl pl-8 py-6 inline">⬥</p>
+            <p className="font-bold mx-6 mt-1">Tyler is a developer based in Collingwood, Ontario.</p>
+            <p className="mx-6 font-light"> Combining his passion for design, photography, and digital media creation with computer programming
+                    and development –
+                    Tyler loves to create websites, GUIs, and user interfaces that are both aesthetically pleasing
+                    and technically proficient!
                 </p>
                 
              </div>
             
-             <div className="mt-4">
+             <div className="mt-4 border-black border-t">
             <Portrait/>
              </div>
         </div>

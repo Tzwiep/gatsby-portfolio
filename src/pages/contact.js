@@ -6,14 +6,17 @@ import NavLinks from "../components/navLinks"
 // styles
 const pageStyles = {
   color: "#232129",
-  paddingLeft: "5vw",
+  paddingLeft: "1.5vw",
   paddingTop: "3vh",
   marginTop: "1rem",
   screenLeft: "33.33%",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
   maxwidth: "66.66%",
   marginLeft: "33.33%",
   backgroundColor: "#ececec"
+}
+const titleText = {
+  fontSize: "10vw",
+  marginTop: "1rem"
 }
 
 // markup
@@ -22,8 +25,8 @@ const ContactPage = ( ) => {
     <main style={pageStyles} className="mx-8">
       <title>Contact</title>
       <NavLinks/>
-      <h1 className="text-9xl mb-16">Contact</h1>
-      
+      <h1 style={titleText}>Contact</h1>
+      <div className="px-16 mx-auto">
       <form  action="https://formspree.io/f/mqkwrdrj" method="POST">
       <label className="my-8 text-lg">
           Name
@@ -42,6 +45,7 @@ const ContactPage = ( ) => {
         <input type="text" name="_gotcha" className="hidden" />
         <button type="submit" className="rounded bg-black text-white w-full py-2">Submit</button>
       </form>
+      </div>
     </main>
   )
 }

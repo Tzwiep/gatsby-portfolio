@@ -1,78 +1,30 @@
 import React from 'react'
+import WorkCard from './WorkCard'
 
  const Work = () => {
     return (
         <div className="grid grid-cols-2 gap-4 mb-8 ">
-
-        <div>
-        <span className="text-2xl">Caleidoscope</span>
-        <table className="table-auto">
-        <thead>
-        <tr className="border-b-2 border-black">
-           
-            <th scope="col"></th>
-            <th scope="col"></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr className="border-b-2 border-black">
-            <th scope="row">role</th>
-            <td colspan="2" class="pl-5">Web Design + Development</td>
-        </tr>
-        <tr className="border-b-2 border-black">
-            <th scope="row">year</th>
-            <td colspan="2" class="pl-5">2016-Present</td>
-        </tr>
-        <tr className="border-b-2 border-black">
-            <th scope="row">http://</th>
-            <td colspan="2" class="pl-5"><a href="https://caleidoscopecreative.com/" target="_blank" rel="noreferrer">caleidoscopecreative.com</a></td>
-        </tr>
-        <tr className="border-b-2 border-black">
-            <th scope="row">work</th>
-            <td colspan="2" class="pl-5">Responsible for various web design and development projects,
-                 including regular site uploads and maintenance,
-                as well digital media creation and photography projects.</td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-
-    <div>
-    <span className="text-2xl">Region of Peel</span>
-        <table className="table-auto">
-        
-        <thead>
-        <tr className="border-b-2 border-black">
-            <th scope="col"></th>
-            <th scope="col"></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr className="border-b-2 border-black">
-            <th scope="row">role</th>
-            <td colspan="2" class="pl-5">Labourer</td>
-        </tr>
-        <tr className="border-b-2 border-black">
-            <th scope="row">year</th>
-            <td colspan="2" class="pl-5">2011-2019</td>
-        </tr>
-        <tr className="border-b-2 border-black">
-            <th scope="row">location//</th>
-            <td colspan="2" class="pl-5">Mississauga, Ontario</td>
-        </tr>
-        <tr className="border-b-2 border-black">
-            <th scope="row">work</th>
-            <td colspan="2" class="pl-5">Responsible for various web design and development projects,
-                 including regular site uploads and maintenance,
-                as well digital media creation and photography projects.</td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-
-    </div>
-
-       
+            <WorkCard
+                work="Caleidoscope"
+                role="Design + Development"
+                year="2016 - Present"
+                online="true"
+                location="caleidoscopecreative.com"
+                duty="Responsible for various web design and development projects, 
+                including regular site uploads and maintenance,
+                 as well digital media creation and photography projects."
+            />
+              <WorkCard
+                work="Region of Peel"
+                role="Labourer"
+                year="2011 - 2019"
+                online="false"
+                location="Mississauga, Ontario"
+                duty="Responsible for day-to-day operations of CRC. Provided public support, 
+                working quickly and accurately in a fast paced environment 
+                while maintaining positive relationships with staff and patrons. "
+            />
+         </div>   
     )
 }
 

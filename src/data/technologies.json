@@ -84,5 +84,15 @@
             "order": 6,
             "image": "Swift.png",
             "title": "Swift"   
+          },
+          {
+            "order": 20,
+            "image": "gatsby.png",
+            "title": "Gatsby"   
+          },
+          {
+            "order": 21,
+            "image": "react.png",
+            "title": "React"   
           }
     ]
