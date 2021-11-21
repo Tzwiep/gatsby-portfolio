@@ -5,11 +5,7 @@
           "image": "adobe.png",
           "title": "Adobe Suite"   
         },
-        {
-          "order": 15,
-            "image": "Angular.png",
-            "title": "Angular"   
-          },
+      
           {
             "order": 11,
             "image": "ASP.NET Core.png",
@@ -94,5 +90,10 @@
             "order": 21,
             "image": "react.png",
             "title": "React"   
+          },
+          {
+            "order": 22,
+            "image": "tailwind.png",
+            "title": "Tailwind CSS"   
           }
     ]

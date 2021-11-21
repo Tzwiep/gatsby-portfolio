@@ -1,7 +1,6 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import NavLinks from "../components/navLinks"
-
-
 
 // styles
 const pageStyles = {
@@ -20,31 +19,33 @@ const titleText = {
 }
 
 // markup
-const ContactPage = ( ) => {
+const ContactPage = () => {
   return (
     <main style={pageStyles} className="mx-8">
-      <title>Contact</title>
-      <NavLinks/>
+      <Helmet>
+        <title>Tyler Zwiep | Contact</title>
+      </Helmet>
+      <NavLinks />
       <h1 style={titleText}>Contact</h1>
       <div className="px-16 mx-auto">
-      <form  action="https://formspree.io/f/mqkwrdrj" method="POST">
-      <label className="my-8 text-lg">
-          Name
-          <input type="text" name="name" className="w-full rounded py-1 mb-4 border bg-white" />
-        </label>
-        <br/>
-        <label className="my-8 text-lg">
-          Email
-          <input type="email" name="_replyto" className="w-full rounded py-1 mb-4 border bg-white"/>
-        </label>
-        <br/>
-        <label className="my-8 text-lg">
-          Message
-          <textarea type="textarea" rows="4" name="message" className="w-full rounded py-1 mb-4 border bg-white"/>
-        </label>
-        <input type="text" name="_gotcha" className="hidden" />
-        <button type="submit" className="rounded bg-black text-white w-full py-2">Submit</button>
-      </form>
+        <form action="https://formspree.io/f/mqkwrdrj" method="POST">
+          <label className="my-8 text-lg">
+            Name
+            <input type="text" name="name" className="w-full rounded py-1 mb-4 border bg-white" />
+          </label>
+          <br />
+          <label className="my-8 text-lg">
+            Email
+            <input type="email" name="_replyto" className="w-full rounded py-1 mb-4 border bg-white" />
+          </label>
+          <br />
+          <label className="my-8 text-lg">
+            Message
+            <textarea type="textarea" rows="4" name="message" className="w-full rounded py-1 mb-4 border bg-white" />
+          </label>
+          <input type="text" name="_gotcha" className="hidden" />
+          <button type="submit" className="rounded bg-black text-white w-full py-2">Submit</button>
+        </form>
       </div>
     </main>
   )
