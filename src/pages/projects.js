@@ -7,18 +7,6 @@ import Fade from 'react-reveal/Fade';
 
 // styles
 
-const vagusStyle = {
-    maxWidth: "33.33vw",
-    marginLeft: "auto",
-    marginRight: "auto",
-    display: "block"
-}
-const babyStepsStyle = {
-    maxWidth: "50vw",
-    marginLeft: "auto",
-    marginRight: "auto",
-    display: "block"
-}
 const laptopImageStyle = {
     maxWidth: "750px",
     marginLeft: "auto",
@@ -43,11 +31,11 @@ const ProjectsPage = () => {
 
             <div className="flex-col">
             <Fade>
-                <StaticImage src="../images/projects/babyStepsScreens-lg.png" alt="BabySteps App Screens on iPhone" style={babyStepsStyle} />
+                <StaticImage src="../images/projects/babyStepsScreens-lg.png" alt="BabySteps App Screens on iPhone" className="babyStepsStyle" />
                 </Fade>
-                <div className="d-flex justify-content-start align-items-center gap-4 inline-flex mt-4">
-                    <p className="font-bold leading-snug">BabySteps - iOS App<br /><span className="font-light">Baby Milestone Scrapbook App</span></p>
-                    <div className="border-black border-l inline-flex mb-4">
+                <div className="justify-content-start align-items-center gap-4 md:inline-flex mt-4">
+                    <p className="font-bold leading-snug ml-2 md:ml-0">BabySteps - iOS App<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">Baby Milestone Scrapbook App</span></p>
+                    <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
                         <a className="link_btn" href="https://github.com/Tzwiep/BabySteps" target="_blank" rel="noreferrer">View on GitHub</a>
                     </div>
                 </div>
@@ -55,11 +43,11 @@ const ProjectsPage = () => {
 
             <div className="flex-col mt-4">
             <Fade>
-                <StaticImage src="../images/projects/vagus-oil.png" alt="Thght Snctry Vagus Massage Oil" style={vagusStyle} />
+                <StaticImage src="../images/projects/vagus-oil.png" alt="Thght Snctry Vagus Massage Oil" className="vagusStyle" />
                 </Fade>
-                <div className="d-flex justify-content-start align-items-center gap-4 inline-flex mt-6">
-                    <p className="font-bold leading-snug">Thght Snctry - Product Images<br /><span className="font-light">3D Renders Using Adobe Dimension</span></p>
-                    <div className="border-black border-l inline-flex mb-4">
+                <div className="justify-content-start align-items-center gap-4 md:inline-flex mt-6">
+                    <p className="font-bold leading-snug ml-2 md:ml-0">Thght Snctry - Product Images<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">3D Renders Using Adobe Dimension</span></p>
+                    <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
                         <a className="link_btn" href="https://goop.com/ca-en/thought-sanctuary-vagus-nerve-oil/p/?variant_id=82951" target="_blank" rel="noreferrer">View on Goop.com</a>
                     </div>
                 </div>
@@ -70,9 +58,9 @@ const ProjectsPage = () => {
             <Fade>
                 <StaticImage src="../images/projects/babySprinkle-lg.png" alt="Baby Sprinkle Website" style={laptopImageStyle} />
                 </Fade>
-                <div className="d-flex justify-content-start align-items-center gap-4 inline-flex">
-                    <p className="font-bold leading-snug">BabySprinkle - ASP.NET<br /><span className="font-light">Virtual Baby Shower Web App</span></p>
-                    <div className="border-black border-l inline-flex mb-4">
+                <div className="justify-content-start align-items-center gap-4 md:inline-flex">
+                    <p className="font-bold leading-snug ml-2 md:ml-0">BabySprinkle - ASP.NET<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">Virtual Baby Shower Web App</span></p>
+                    <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
                         <a className="link_btn" href="https://github.com/Tzwiep/BabySprinkle" target="_blank" rel="noreferrer">View on GitHub</a>
                     </div>
                 </div>
@@ -85,9 +73,9 @@ const ProjectsPage = () => {
                     <StaticImage src="../images/projects/dictionaryResult.png" alt="Java Dictionary App  Word Details" className="dictionary" />
                     </Fade>
                 </div>
-                <div className="d-flex justify-content-start align-items-center gap-4 inline-flex">
-                    <p className="font-bold leading-snug">Dictionary App - Java<br /><span className="font-light">Dictionary Application Using the WordsAPI</span></p>
-                    <div className="border-black border-l inline-flex mb-4">
+                <div className="justify-content-start align-items-center gap-4 md:inline-flex">
+                    <p className="font-bold leading-snug ml-2 md:ml-0">Dictionary App - Java<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">Dictionary Application Using the WordsAPI</span></p>
+                    <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
                         <a className="link_btn" href="https://github.com/Tzwiep/DictionaryApp" target="_blank" rel="noreferrer">View on GitHub</a>
                     </div>
                 </div>
@@ -97,9 +85,9 @@ const ProjectsPage = () => {
             <Fade>
                 <StaticImage src="../images/projects/BabyMilestones.png" alt="Baby Milestones App on Macbook" style={laptopImageStyle} />
                 </Fade>
-                <div className="d-flex justify-content-start align-items-center gap-4 inline-flex">
-                    <p className="font-bold leading-snug">Baby Milestones - Node.js, Express, Handlebars, and MongoDB<br /><span className="font-light">CRUD Web Application</span></p>
-                    <div className="border-black border-l inline-flex mb-4">
+                <div className="justify-content-start align-items-center gap-4 md:inline-flex">
+                    <p className="font-bold leading-snug ml-2 md:ml-0">Baby Milestones - Node.js, Express, Handlebars, and MongoDB<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">CRUD Web Application</span></p>
+                    <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
                         <a className="link_btn" href="https://baby-milestone.herokuapp.com/" target="_blank" rel="noreferrer">View Website</a>
                     </div>
                 </div>
@@ -109,9 +97,9 @@ const ProjectsPage = () => {
             <Fade>
                 <StaticImage src="../images/projects/BDH.png" alt="Barrie Dental Hygiene Website on Macbook" style={laptopImageStyle} />
                 </Fade>
-                <div className="d-flex justify-content-start align-items-center gap-4 inline-flex">
-                    <p className="font-bold leading-snug">Barrie Dental Hygiene - Front End Design<br /><span className="font-light">Custom Squarespace Website</span></p>
-                    <div className="border-black border-l inline-flex mb-4">
+                <div className="justify-content-start align-items-center gap-4 md:inline-flex">
+                    <p className="font-bold leading-snug ml-2 md:ml-0">Barrie Dental Hygiene - Front End Design<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">Custom Squarespace Website</span></p>
+                    <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
                         <a className="link_btn" href="https://www.barriedentalhygiene.ca" target="_blank" rel="noreferrer">View Website</a>
                     </div>
                 </div>

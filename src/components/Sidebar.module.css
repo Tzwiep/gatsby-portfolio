@@ -27,12 +27,15 @@
 
     @media only screen and (max-width: 768px) {
         #largeText{
-            font-size: 12vw;
+            font-size: 14vw;
             font-family: aktiv-grotesk, sans-serif;
             font-weight: 700;
             font-style: normal;
             color: #212529;
-            margin-left: 10vw;
+            justify-content: center;
+            margin-left:auto;
+            margin-right: auto;
+            padding-left: 2rem;
             
             }
             .diamond{

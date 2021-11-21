@@ -23,7 +23,7 @@ const ContactPage = () => {
         <form action="https://formspree.io/f/mqkwrdrj" method="POST">
           <label className="my-8 text-lg">
             Name
-            <input type="text" name="name" className="w-full rounded py-1 mb-4 border bg-white" />
+            <input type="text" name="name" className="w-full rounded py-1 px-1 mb-4 border bg-white text-md" />
           </label>
           <br />
           <label className="my-8 text-lg">
