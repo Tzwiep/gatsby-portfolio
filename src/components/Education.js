@@ -3,7 +3,7 @@ import EducationCard from './EducationCard'
 
  const Education = () => {
     return (
-        <div className="grid grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-4 mb-4">
             <EducationCard 
             school="Georgian College"
             title="Diploma, Computer Programmer"

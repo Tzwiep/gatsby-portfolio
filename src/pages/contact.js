@@ -1,18 +1,10 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import NavLinks from "../components/navLinks"
+import "../styles/contact.css"
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  paddingLeft: "1.5vw",
-  paddingTop: "3vh",
-  marginTop: "1rem",
-  screenLeft: "33.33%",
-  maxwidth: "66.66%",
-  marginLeft: "33.33%",
-  backgroundColor: "#ececec"
-}
+
 const titleText = {
   fontSize: "10vw",
   marginTop: "1rem"
@@ -21,13 +13,13 @@ const titleText = {
 // markup
 const ContactPage = () => {
   return (
-    <main style={pageStyles} className="mx-8">
+    <main className="mx-8 page">
       <Helmet>
         <title>Tyler Zwiep | Contact</title>
       </Helmet>
       <NavLinks />
       <h1 style={titleText}>Contact</h1>
-      <div className="px-16 mx-auto">
+      <div className="px-4 md:px-16 mx-auto">
         <form action="https://formspree.io/f/mqkwrdrj" method="POST">
           <label className="my-8 text-lg">
             Name

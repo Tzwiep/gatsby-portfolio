@@ -12,7 +12,11 @@ export default function WorkCard(props) {
                 {props.online === 'true' ? 'http://' : 'location'}
             </div>
             <div className="font-light p-1 col-start-2 col-span-2 border-t border-black pl-6">
-                {props.online === 'true' ? <a className="text-blue-500 underline" href={"https://www." + props.location}>{props.location}</a> : <>{props.location}</>}
+                {props.online === 'true' 
+                    ? <a className="text-blue-500 underline" href={"https://www." + props.location} target="_blank" rel="noreferrer">
+                        {props.location}
+                        </a>
+                    : <>{props.location}</>}
             </div>
             <div className="font-bold p-1 border-t border-b border-black h-70">work</div>
             <div className="font-light p-1 col-start-2 col-span-2 border-t border-b border-black px-6 h-70">{props.duty}</div>

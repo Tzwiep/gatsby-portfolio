@@ -1,46 +1,20 @@
 import React from 'react'
 import { Portrait }  from './Portrait'
 import  ContactButtons  from './contactButtons'
-
-const largeText = {
-fontSize: "4vw",
-fontFamily: "aktiv-grotesk, sans-serif",
-fontWeight: 700,
-fontStyle: "normal",
-color: "#212529",
-marginTop: "1rem",
-marginLeft: "1rem"
-}
-const bioText = {
-    fontSize: "0.9em",
-    fontFamily: "neue-haas-grotesk-text",
-    fontWeight: 400
-    
-}
-const bioText_Bold = {
-    fontSize: "0.9em",
-    fontFamily: "neue-haas-grotesk-text",
-    fontWeight: 700 
-}
-const diamond = {
-    display:"inline",
-    fontSize: "1.5em",
-    marginLeft: "0.8vw",
-    paddingRight: "1vw",
-    lineHeight: "1vh"
-}
+import * as SidebarStyle from "./Sidebar.module.css"
 
  const Sidebar = () => {
     return (
-        <div className="fixed flex-col w-2/6 h-full border-black border-r">
+        <>
+        <div className="md:fixed text-center md:text-left flex flex-row items-center md:flex-col w-screen md:w-2/6 md:h-full md:border-black md:border-r">
             <div>
-            <h2 style={largeText} className="text-7xl font-bold pt-4 mt-2 mb-3 mx-8">Tyler<br/>Zwiep</h2>
+            <h2 className="text-7xl pt-4 mt-2 mb-3 mx-8" id={SidebarStyle.largeText}>Tyler<br/>Zwiep</h2>
             <ContactButtons />
             <div className="ml-3 mt-3 mb-2">
-            <p style={diamond}>⬥</p><p style={diamond}>⬥</p> <p style={diamond}>⬥</p><p style={diamond}>⬥</p>
+            <p className={SidebarStyle.diamond}>⬥</p><p className={SidebarStyle.diamond}>⬥</p> <p className={SidebarStyle.diamond}>⬥</p><p className={SidebarStyle.diamond}>⬥</p>
             </div>
-            <p style={bioText_Bold} className="mx-6 mt-1" >Tyler is a developer based in Collingwood, Ontario.</p>
-            <p className="mx-6 font-light" style={bioText}> Combining his passion for design, photography, and digital media creation with computer programming
+            <p  className="mx-6 mt-1 hidden md:flex" id={SidebarStyle.bioText_Bold}>Tyler is a developer based in Collingwood, Ontario.</p>
+            <p className="mx-6 font-light hidden md:flex" id={SidebarStyle.bioText}> Combining his passion for design, photography, and digital media creation with computer programming
                     and development –
                     Tyler loves to create websites, GUIs, and user interfaces that are both aesthetically pleasing
                     and technically proficient!
@@ -48,10 +22,17 @@ const diamond = {
                 
              </div>
             
-             <div className="mt-4 border-black border-t">
-            <Portrait/>
+             <div className=" flex-shrink md:mt-4 md:border-black md:border-t">
+            <Portrait />
              </div>
-        </div>
+             </div>
+             <p  className="md:hidden w-screen mt-1" id={SidebarStyle.bioText_Bold}>Tyler is a developer based in Collingwood, Ontario.</p>
+            <p className="md:hidden w-screen font-light" id={SidebarStyle.bioText}> Combining his passion for design, photography, and digital media creation with computer programming
+                    and development –
+                    Tyler loves to create websites, GUIs, and user interfaces that are both aesthetically pleasing
+                    and technically proficient!
+                </p>
+       </>
 
     )
 }

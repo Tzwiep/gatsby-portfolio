@@ -2,7 +2,7 @@
   "name": "tz-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "TZ Portfolio",
+  "description": "Tyler Zwiep's Portfolio Website",
   "author": "Tzwiep",
   "keywords": [
     "gatsby"
@@ -27,7 +27,8 @@
     "gatsby-transformer-sharp": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

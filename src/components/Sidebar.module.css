@@ -1,0 +1,63 @@
+#largeText{
+    font-size: 4vw;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #212529;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    }
+#bioText{
+        font-size: 0.9rem;
+        font-family: neue-haas-grotesk-text;
+        font-weight: 400;
+    }
+#bioText_Bold{
+    font-size: 0.9rem;
+    font-family: neue-haas-grotesk-text;
+    font-weight: 700;
+    }
+.diamond{
+        display:inline;
+        font-size: 1.5em;
+        margin-left: 0.8vw;
+        padding-right: 1vw;
+        line-height: 1vh;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #largeText{
+            font-size: 12vw;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #212529;
+            margin-left: 10vw;
+            
+            }
+            .diamond{
+                display:inline;
+                font-size: 1.5em;
+                margin-left: 1rem;
+                padding-right: 1vw;
+                line-height: 1vh;
+            }
+            #bioText{
+                font-size: 0.9rem;
+                font-family: neue-haas-grotesk-text;
+                font-weight: 400;
+                margin-left:auto;
+                margin-right: auto;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            #bioText_Bold{
+                font-size: 0.9rem;
+                font-family: neue-haas-grotesk-text;
+                font-weight: 700;
+                margin-left:auto;
+                margin-right: auto;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                }
+    }

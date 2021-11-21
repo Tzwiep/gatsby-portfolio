@@ -1,7 +1,7 @@
 
    [
         {
-          "order": 16,
+          "order": 18,
           "image": "adobe.png",
           "title": "Adobe Suite"   
         },
@@ -32,7 +32,7 @@
             "title": "HTML"   
           },
           {
-            "order": 5,
+            "order": 7,
             "image": "Java.png",
             "title": "Java"   
           },
@@ -57,43 +57,48 @@
             "title": "PHP"   
           },
           {
-            "order": 8,
+            "order": 10.5,
             "image": "NoSQL.png",
             "title": "NoSQL"   
           },
           {
-            "order": 7,
+            "order": 9,
             "image": "SQL Server.png",
             "title": "SQL Server"   
           },
           {
-            "order": 19,
+            "order": 20,
             "image": "Shopify.png",
             "title": "Shopify"   
           },
           {
-            "order": 18,
+            "order": 19,
             "image": "Squarespace.png",
             "title": "Squarespace"   
           },
           {
-            "order": 6,
+            "order": 8,
             "image": "Swift.png",
             "title": "Swift"   
           },
           {
-            "order": 20,
+            "order": 5,
             "image": "gatsby.png",
             "title": "Gatsby"   
           },
           {
-            "order": 21,
+            "order": 6,
             "image": "react.png",
             "title": "React"   
           },
           {
-            "order": 22,
+            "order": 16,
             "image": "tailwind.png",
             "title": "Tailwind CSS"   
+          },
+          {
+            "order": 17,
+            "image": "bootstrap.png",
+            "title": "Bootstrap"   
           }
     ]

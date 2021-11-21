@@ -22,11 +22,11 @@ export default function Layout({ children }) {
                 <link rel="stylesheet" href="https://use.typekit.net/vzd4qeo.css" />
                 <meta name="icon" href="../images/tz-logo.png" />
             </Helmet>
-            <div className="fixed w-full z-50 top-0" style={{ fontFamily: "aktiv-grotesk, sans-serif", fontWeight: "400", backgroundColor: " #ececec" }}>
+            <div className="fixed w-screen z-50 top-0 header">
                 <Header />
             </div>
             <Sidebar />
-            <div style={{ fontFamily: "aktiv-grotesk, sans-serif", fontWeight: "400", backgroundColor: " #ececec" }}>
+            <div class="site">
                 {children}
             </div>
         </>
