@@ -19,9 +19,10 @@ export default function Layout({ children }) {
     return (
         <>
             <Helmet>
+                <html lang="en" />
                 <title>{data.site.siteMetadata.title}</title>
                 <meta name="description" content={data.site.siteMetadata.description} />
-                <link rel="stylesheet" href="https://use.typekit.net/vzd4qeo.css" />
+                <link rel="stylesheet" href="https://use.typekit.net/vzd4qeo.css" media="screen"  />
                 <meta name="icon" href="../images/tz-logo.png" />
             </Helmet>
             <div className="fixed w-screen z-50 top-0 header">
