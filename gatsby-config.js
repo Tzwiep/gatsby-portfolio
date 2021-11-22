@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.tylerzwiep.ca",
     title: "TZ Portfolio",
+    description: "Developer Portfolio for Tyler Zwiep. Site created by Tyler using Gatsby, React, Tailwind CSS, and is deployed to the Gatsby Cloud via GitHub."
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",

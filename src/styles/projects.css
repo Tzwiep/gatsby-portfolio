@@ -1,4 +1,5 @@
 /* CSS */
+
 .link_btn {
     background-color: #2c3135;
     color: whitesmoke;
@@ -17,24 +18,24 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .link_btn:hover {
+}
+
+.link_btn:hover {
     box-sizing: border-box;
     background-color: transparent;
     color: #111827;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  }
-  
-  .link_btn:focus {
+}
+
+.link_btn:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
-  }
-  
-  .link_btn:focus-visible {
+}
+
+.link_btn:focus-visible {
     box-shadow: none;
-  }
+}
 
 .dictionary {
     margin-top: 3rem;
@@ -42,43 +43,44 @@
     margin-left: auto;
     margin-right: auto;
 }
-.tech_thumb{
-    max-width:3vw;
-    display:inline-flex;
+
+.tech_thumb {
+    max-width: 3vw;
+    display: inline-flex;
     margin: 1rem;
 }
 
-.page{
+.page {
     background-color: #ececec;
     padding-left: 1.5vw;
     padding-top: 3vh;
     margin-top: 1rem;
-
     max-width: 66.66%;
     margin-left: 33.33%;
     color: #232129;
-  }
+}
 
-  .titleText {
+.titleText {
     font-size: 10vw;
     margin-bottom: 1rem;
-  }
+}
 
-.vagusStyle{
+.vagusStyle {
     max-width: 33.33vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.babyStepsStyle{
+
+.babyStepsStyle {
     max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-  @media only screen and (max-width: 768px) {
-    .page{
+@media only screen and (max-width: 768px) {
+    .page {
         padding-left: 1.5vw;
         padding-right: 1.5vw;
         padding-top: 3vh;
@@ -87,29 +89,30 @@
         margin-left: auto;
         margin-right: auto;
         color: #232129;
-       }
-   .tech_thumb{
-    max-width:6vw;
-    display:inline-flex;
-    margin: 1rem;
     }
-    .vagusStyle{
-    max-width: 66.66vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    .tech_thumb {
+        max-width: 6vw;
+        display: inline-flex;
+        margin: 1rem;
     }
-    .babyStepsStyle{
-        max-width: 85vw;
+    .vagusStyle {
+        padding: 4rem;
         margin-left: auto;
         margin-right: auto;
-        display: block;
+    }
+    .babyStepsStyle {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2rem;
     }
     .link_btn {
-      
         margin-left: 0.5rem;
         margin-top: 4rem;
-       
-      }
-
+    }
+    .dictionary {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

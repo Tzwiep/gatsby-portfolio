@@ -11,6 +11,7 @@ export default function Layout({ children }) {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
@@ -19,6 +20,7 @@ export default function Layout({ children }) {
         <>
             <Helmet>
                 <title>{data.site.siteMetadata.title}</title>
+                <meta name="description" content={data.site.siteMetadata.description} />
                 <link rel="stylesheet" href="https://use.typekit.net/vzd4qeo.css" />
                 <meta name="icon" href="../images/tz-logo.png" />
             </Helmet>
