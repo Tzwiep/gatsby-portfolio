@@ -6,7 +6,18 @@ import { Helmet } from "react-helmet"
 import Fade from 'react-reveal/Fade';
 
 // styles
-
+const vagusStyle = {
+    maxWidth: "33.33vw",
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "block"
+}
+const babyStepsStyle = {
+    maxWidth: "50vw",
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "block"
+}
 const laptopImageStyle = {
     maxWidth: "750px",
     marginLeft: "auto",
@@ -31,7 +42,7 @@ const ProjectsPage = () => {
 
             <div className="flex-col">
             <Fade>
-                <StaticImage src="../images/projects/babyStepsScreens-lg.png" alt="BabySteps App Screens on iPhone" className="babyStepsStyle" />
+                <StaticImage src="../images/projects/babyStepsScreens-lg.png" alt="BabySteps App Screens on iPhone" className="babyStepsStyle" style={babyStepsStyle} />
                 </Fade>
                 <div className="justify-content-start align-items-center gap-4 md:inline-flex mt-4">
                     <p className="font-bold leading-snug ml-2 md:ml-0">BabySteps - iOS App<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">Baby Milestone Scrapbook App</span></p>
@@ -43,7 +54,7 @@ const ProjectsPage = () => {
 
             <div className="flex-col mt-4">
             <Fade>
-                <StaticImage src="../images/projects/vagus-oil.png" alt="Thght Snctry Vagus Massage Oil" className="vagusStyle" />
+                <StaticImage src="../images/projects/vagus-oil.png" alt="Thght Snctry Vagus Massage Oil" className="vagusStyle" style={vagusStyle} />
                 </Fade>
                 <div className="justify-content-start align-items-center gap-4 md:inline-flex mt-6">
                     <p className="font-bold leading-snug ml-2 md:ml-0">Thght Snctry - Product Images<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">3D Renders Using Adobe Dimension</span></p>
