@@ -7,13 +7,13 @@ import Fade from 'react-reveal/Fade';
 
 // styles
 const vagusStyle = {
-    maxWidth: "33.33vw",
+    maxWidth: "550px",
     marginLeft: "auto",
     marginRight: "auto",
     display: "block"
 }
 const babyStepsStyle = {
-    maxWidth: "50vw",
+    maxWidth: "750px",
     marginLeft: "auto",
     marginRight: "auto",
     display: "block"
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
 
             <div className="flex-col">
             <Fade>
-                <StaticImage src="../images/projects/babyStepsScreens-lg.png" alt="BabySteps App Screens on iPhone" className="babyStepsStyle" style={babyStepsStyle} />
+                <StaticImage src="../images/projects/babyStepsScreens-lg.png" alt="BabySteps App Screens on iPhone" id="babyStepsStyle" style={babyStepsStyle} />
                 </Fade>
                 <div className="justify-content-start align-items-center gap-4 md:inline-flex mt-4">
                     <p className="font-bold leading-snug ml-2 md:ml-0">BabySteps - iOS App<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">Baby Milestone Scrapbook App</span></p>
