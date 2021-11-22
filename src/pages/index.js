@@ -20,9 +20,9 @@ const IndexPage = ({ data }) => {
       <NavLinks />
 
       <h1 className="titleText">Technology</h1>
-      <div className="flex flex-row flex-wrap justify-center gap-1 gap-y-8 mb-4 px-2 items-end">
+      <div className="flex flex-row flex-wrap place-content-evenly md:justify-center gap-3 px-4 md:px-2 md:gap-1 md:gap-y-8 mb-4 items-end">
         {data.allTechnologiesJson.edges.map(jsonData => {
-          return <div key={jsonData.order} className="flex flex-col mx-8 text-center flex-initial">
+          return <div key={jsonData.order} className="flex flex-col my-2 mx-2 md:my-0 md:mx-8 text-center flex-initial">
             {data.allFile.edges.map(item => {
               if (jsonData.node.image.includes(item.node.base))
                 return <>
