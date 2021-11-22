@@ -1,54 +1,48 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+<div id="top"></div>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+    <img src="src/images/tz-logo.png" alt="Logo" width="100" height="100">
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+  <h3 align="center">Tyler Zwiep - Developer Portfolio</h3>
 
-2.  **Start developing.**
+  <p align="center">
+   View the site
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>www.tylerzwiep.ca »</strong></a>
+    <br />
+</div>
 
-    Navigate into your new site’s directory and start it up.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
 
-    Your site is now running at http://localhost:8000!
+<!-- ABOUT THE PROJECT -->
 
-    Edit `src/pages/index.js` to see your site update in real-time!
 
-4.  **Learn more**
+## Built With
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+* [Gatsby](https://www.gatsbyjs.com/)
+* [React.js](https://reactjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)
+</br>
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+<!-- CONTACT -->
+## Contact
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Tyler Zwiep - [tyler.zwiep@gmail.com](mailTo:tyler.zwiep@gmail.com)
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Find me on LinkedIn: [https://www.linkedin.com/in/tyler-zwiep/](https://www.linkedin.com/in/tyler-zwiep/)
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+View my other projects on GitHub: [https://github.com/Tzwiep/](https://github.com/Tzwiep/)
 
-## 🚀 Quick start (Gatsby Cloud)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+
+
