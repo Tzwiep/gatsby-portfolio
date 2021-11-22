@@ -1,0 +1,23 @@
+.work_grid{
+    display: grid;
+    grid-template-columns: minmax(2rem, 5rem) 3fr;
+    border-top: 1px solid black;
+    grid-template-rows: 1fr 1fr 1fr 4fr;
+   
+}
+
+.work_grid > span {
+    padding: 6px 8px;
+    border-bottom: 1px solid black;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .work_grid{
+        display: grid;
+        grid-template-columns: 1fr, 3fr;
+        border-top: 1px solid black;
+        grid-template-rows: 1fr 1fr 1fr 2fr;
+       
+    }
+}

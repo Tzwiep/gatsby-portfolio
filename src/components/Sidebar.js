@@ -8,7 +8,7 @@ import * as SidebarStyle from "./Sidebar.module.css"
         <>
         <div className="md:fixed text-center md:text-left flex flex-row items-center md:flex-col w-screen md:w-2/6 md:h-full md:border-black md:border-r">
             <div>
-            <h2 className="text-7xl pt-4 mt-2 mb-3 mx-8" id={SidebarStyle.largeText}>Tyler<br/>Zwiep</h2>
+            <h2 className="text-7xl pt-4 pl-1 mt-2 mb-3 mx-8" id={SidebarStyle.largeText}>Tyler<br/>Zwiep</h2>
             <ContactButtons />
             <div className="ml-3 mt-3 mb-2">
             <p className={SidebarStyle.diamond}>⬥</p><p className={SidebarStyle.diamond}>⬥</p> <p className={SidebarStyle.diamond}>⬥</p><p className={SidebarStyle.diamond}>⬥</p>
@@ -22,7 +22,7 @@ import * as SidebarStyle from "./Sidebar.module.css"
                 
              </div>
             
-             <div className=" flex-shrink md:mt-4 md:border-black md:border-t">
+             <div className=" flex-shrink md:mt-4 lg:mt-12 xl:mt:-8 md:border-black md:border-t">
             <Portrait />
              </div>
              </div>
