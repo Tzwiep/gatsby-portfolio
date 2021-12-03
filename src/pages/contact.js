@@ -20,7 +20,7 @@ const ContactPage = () => {
       <NavLinks />
       <h1 style={titleText}>Contact</h1>
       <div className="px-4 md:px-16 mx-auto">
-        <form action="https://formspree.io/f/mqkwrdrj" method="POST">
+        <form action="https://www.flexyform.com/f/6fc6223a49eebe5ac338bdeeea602220be0fadf5" method="POST">
           <label className="my-8 text-lg">
             Name
             <input type="text" name="name" className="w-full rounded py-1 px-1 mb-4 border bg-white text-md" />
