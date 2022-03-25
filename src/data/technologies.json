@@ -72,6 +72,11 @@
             "title": "Shopify"   
           },
           {
+            "order": 21,
+            "image": "Wordpress.png",
+            "title": "WordPress"   
+          },
+          {
             "order": 19,
             "image": "Squarespace.png",
             "title": "Squarespace"   
