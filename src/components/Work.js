@@ -4,10 +4,19 @@ import WorkCard from './WorkCard'
  const Work = () => {
     return (
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-4 mb-8 ">
+             <WorkCard
+                work="Interkom"
+                role="Web Developer"
+                year="2021 - Present"
+                online="true"
+                location="interkom.ca"
+                duty="Responsible for various web development projects, 
+                including buidling client websites, performing web content updates, and performing regular site maintenance"
+            />
             <WorkCard
                 work="Caleidoscope"
                 role="Web Design + Development"
-                year="2016 - Present"
+                year="2016 - 2021"
                 online="true"
                 location="caleidoscopecreative.com"
                 duty="Responsible for various web design and development projects, 
