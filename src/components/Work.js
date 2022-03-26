@@ -3,7 +3,7 @@ import WorkCard from './WorkCard'
 
  const Work = () => {
     return (
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-4 mb-8 ">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 gap-y-16 xl:gap-4 mb-8 ">
              <WorkCard
                 work="Interkom"
                 role="Web Developer"
