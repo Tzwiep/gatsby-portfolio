@@ -10,12 +10,11 @@ import WorkCard from './WorkCard'
                 year="2021 - Present"
                 online="true"
                 location="interkom.ca"
-                duty="As a Web Developer and Designer, I utilize a wide range of technologies to design and develop visually appealing, 
-                responsive websites. I work with HTML, CSS, JavaScript, and various other tools and frameworks to create intuitive interfaces 
-                and seamless user experiences. I collaborate closely with clients to ensure that the websites meet their specific requirements, 
-                and integrate with content management systems like WordPress to provide easy content management for clients. 
-                Following industry best practices, I optimize websites for performance, accessibility, and search engine visibility. 
-                I continuously stay updated on the latest trends and advancements in web development to deliver high-quality, modern websites."
+                duty="Utilizing a wide range of technologies, I design and
+                 develop visually appealing, responsive websites that meet with clients’ spcific requirements.
+                  I work with HTML, CSS, JavaScript, and various other tools and frameworks to create intuitive interfaces and seamless user experiences. 
+                  Following industry best practices, I optimize websites for performance, accessibility, and search engine visibility.
+                 I continuously stay updated on the latest trends and advancements in web development to deliver high-quality, modern websites."
             />
             <WorkCard
                 work="Caleidoscope"
