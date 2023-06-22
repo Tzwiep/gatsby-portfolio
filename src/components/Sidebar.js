@@ -14,10 +14,9 @@ import * as SidebarStyle from "./Sidebar.module.css"
             <p className={SidebarStyle.diamond}>⬥</p><p className={SidebarStyle.diamond}>⬥</p> <p className={SidebarStyle.diamond}>⬥</p><p className={SidebarStyle.diamond}>⬥</p>
             </div>
             <p  className="mx-6 mt-1 hidden md:flex" id={SidebarStyle.bioText_Bold}>Tyler is a developer based in Collingwood, Ontario.</p>
-            <p className="mx-6 font-light hidden md:flex" id={SidebarStyle.bioText}> Combining his passion for design, photography, and digital media creation with computer programming
-                    and development –
-                    Tyler loves to create websites, GUIs, and user interfaces that are both aesthetically pleasing
-                    and technically proficient!
+            <p className="mx-6 font-light hidden md:flex" id={SidebarStyle.bioText}> I am a multi-disciplinary creative professional with a keen eye for design, photography, and digital media creation. 
+            With my extensive background in computer programming and development, I am able to seamlessly blend my artistic skills with my 
+            technical expertise to produce visually stunning and highly functional digital experiences.
                 </p>
                 
              </div>

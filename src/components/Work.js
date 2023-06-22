@@ -10,29 +10,27 @@ import WorkCard from './WorkCard'
                 year="2021 - Present"
                 online="true"
                 location="interkom.ca"
-                duty="Responsible for various web development projects, 
-                including buidling client websites, performing web content updates, and performing regular site maintenance"
+                duty="As a Web Developer and Designer, I utilize a wide range of technologies to design and develop visually appealing, 
+                responsive websites. I work with HTML, CSS, JavaScript, and various other tools and frameworks to create intuitive interfaces 
+                and seamless user experiences. I collaborate closely with clients to ensure that the websites meet their specific requirements, 
+                and integrate with content management systems like WordPress to provide easy content management for clients. 
+                Following industry best practices, I optimize websites for performance, accessibility, and search engine visibility. 
+                I continuously stay updated on the latest trends and advancements in web development to deliver high-quality, modern websites."
             />
             <WorkCard
                 work="Caleidoscope"
-                role="Web Design + Development"
+                role="Design + Development"
                 year="2016 - 2021"
                 online="true"
                 location="caleidoscopecreative.com"
-                duty="Responsible for various web design and development projects, 
-                including regular site uploads and maintenance,
-                 as well digital media creation and photography projects."
+                duty="Responsible for creating visually stunning and user-friendly websites using Squarespace, 
+                leveraging my expertise in custom CSS and JavaScript. Additionally, I excelled in digital media 
+                creation and photography, capturing compelling visuals that effectively showcased products and 
+                enhanced brand representation. With a keen eye for detail and strong project management abilities, 
+                I successfully managed regular site uploads, maintenance, and the execution of impactful digital media projects."
             />
-              <WorkCard
-                work="Region of Peel"
-                role="Labourer"
-                year="2011 - 2019"
-                online="false"
-                location="Mississauga, Ontario"
-                duty="Responsible for day-to-day operations of CRC. Provided public support, 
-                working quickly and accurately in a fast paced environment 
-                while maintaining positive relationships with staff and patrons. "
-            />
+             
+        
          </div>   
     )
 }
