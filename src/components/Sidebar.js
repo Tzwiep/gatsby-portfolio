@@ -26,10 +26,9 @@ import * as SidebarStyle from "./Sidebar.module.css"
              </div>
              </div>
              <p  className="md:hidden w-screen mt-1" id={SidebarStyle.bioText_Bold}>Tyler is a developer based in Collingwood, Ontario.</p>
-            <p className="md:hidden w-screen font-light" id={SidebarStyle.bioText}> Combining his passion for design, photography, and digital media creation with computer programming
-                    and development –
-                    Tyler loves to create websites, GUIs, and user interfaces that are both aesthetically pleasing
-                    and technically proficient!
+            <p className="md:hidden w-screen font-light" id={SidebarStyle.bioText}> I am a multi-disciplinary creative professional with a keen eye for design, photography, and digital media creation. 
+            With my extensive background in computer programming and development, I am able to seamlessly blend my artistic skills with my 
+            technical expertise to produce visually stunning and highly functional digital experiences.
                 </p>
        </>
 
