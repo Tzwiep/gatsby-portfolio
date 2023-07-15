@@ -59,7 +59,7 @@ const ProjectsPage = () => {
                 <div className="justify-content-start align-items-center gap-4 md:inline-flex mt-6">
                     <p className="font-bold leading-snug ml-2 md:ml-0">Thght Snctry - Product Images<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">3D Renders Using Adobe Dimension</span></p>
                     <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
-                        <a className="link_btn" href="https://goop.com/ca-en/thought-sanctuary-vagus-nerve-oil/p/?variant_id=82951" target="_blank" rel="noreferrer">View on Goop.com</a>
+                        <a className="link_btn" href="https://thghtsnctry.co/" target="_blank" rel="noreferrer">View on thghtsnctry.co</a>
                     </div>
                 </div>
             </div>
