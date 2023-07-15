@@ -99,7 +99,7 @@ const ProjectsPage = () => {
                 <div className="justify-content-start align-items-center gap-4 md:inline-flex">
                     <p className="font-bold leading-snug ml-2 md:ml-0">Baby Milestones - Node.js, Express, Handlebars, and MongoDB<br /><span className="font-light pb-2 md:pb-0 md:border-b-0">CRUD Web Application</span></p>
                     <div className="border-black mt-4 md:mt-0 md:border-l md:inline-flex mb-4">
-                        <a className="link_btn" href="https://baby-milestone.herokuapp.com/" target="_blank" rel="noreferrer">View Website</a>
+                        <a className="link_btn" href="https://github.com/Tzwiep/CRUD-Assignment2_COMP2068_st200428335" target="_blank" rel="noreferrer">View on GitHub</a>
                     </div>
                 </div>
             </div>
