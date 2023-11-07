@@ -3,7 +3,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import NavLinks from "../components/navLinks"
 import "../styles/projects.css"
 import { Helmet } from "react-helmet"
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
+
 
 // styles
 const vagusStyle = {
@@ -118,7 +119,7 @@ const ProjectsPage = () => {
 
             <div className="flex-col mt-16 mb-8 text-center">
                 <div className="border-t border-gray-300 w-4/5 mx-auto mb-16">
-                <Fade bottom>
+                <Fade direction="up">
                     <div>
                     <StaticImage src="../images/tech/gatsby.png" alt="Gatsby Icon" className="tech_thumb" />
                     <StaticImage src="../images/tech/react.png" alt="React Icon" className="tech_thumb" />
