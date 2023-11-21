@@ -3,48 +3,62 @@
 @tailwind utilities;
 
 .toggle-checkbox:checked {
-    @apply: right-0 border-green-900;
-    right: 0;
-    
-  }
-  .toggle-checkbox:checked + .toggle-label {
-    background-color: #6366F1;
-  }
-  .toggle-checkbox {
-    @apply absolute opacity-0 w-0 h-0;
-    position: absolute;
-  }
- 
-  .toggle-label {
-    @apply block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer relative;
-    position: relative;
-    display: block;
-    overflow: hidden;
-  }
-  .dark .toggle-label::after {
-    @apply absolute block h-4 w-4 mt-1 ml-1 rounded-full bg-white shadow transform duration-300 ease-in-out;
-    content: '';
-    position: absolute;
-    background-image: url('../images/icons/dark-mode.svg');
-    transition: transform 0.3s ease-in-out;
-    background-size: 80% 80%; 
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .toggle-label::after {
-    @apply absolute block h-4 w-4 mt-1 ml-1 rounded-full bg-white shadow transform duration-300 ease-in-out;
-    content: '';
-    position: absolute;
-    background-image: url('../images/icons/light-mode.svg');
-    transition: transform 0.3s ease-in-out;
-    background-repeat: no-repeat;
-    background-size: 80% 80%; 
-    background-position: center;
-    
-  }
-  .toggle-checkbox:checked + .toggle-label::after {
-    @apply translate-x-4;
-  }
+  right: 0;
+  border-color: #064e3b; /* border-green-900 */
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #6366F1;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  display: block;
+  overflow: hidden;
+  height: 1.5rem; /* h-6 */
+  border-radius: 9999px; /* rounded-full */
+  background-color: #d1d5db; /* bg-gray-300 */
+  cursor: pointer;
+  position: relative;
+}
+
+.dark .toggle-label::after,
+.toggle-label::after {
+  position: absolute;
+  display: block;
+  height: 1rem; /* h-4 */
+  width: 1rem; /* w-4 */
+  top: 50%;
+transform: translateY(-50%);
+left:0;
+  margin-left: .25rem;
+  border-radius: 9999px; /* rounded-full */
+  background-color: #ffffff; /* bg-white */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow */
+  transition: transform 0.3s ease-in-out;
+  content: '';
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dark .toggle-label::after {
+  background-image: url('../images/icons/dark-mode.svg');
+}
+
+.toggle-label::after {
+  background-image: url('../images/icons/light-mode.svg');
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+  transform: translateY(-50%) translateX(1rem); 
+}
   input:focus, textarea:focus{
     outline: 3px solid #6366F1;
     caret-color: #6366F1;
