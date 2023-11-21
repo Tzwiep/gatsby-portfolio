@@ -7,8 +7,12 @@
     max-width: 66.66%;
     margin-left: 33.33%;
     color: #232129;
-  }
 
+  }
+.dark .page{
+  background-color: #232129;
+  color: #ececec;
+}
   .titleText {
     font-size: 10vw;
     margin-bottom: 1rem;
@@ -24,5 +28,8 @@
     margin-left: auto;
     margin-right: auto;
     color: #232129;
+   }
+   .dark .page{
+    color: #ececec;
    }
 }

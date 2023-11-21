@@ -1,3 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toggle-checkbox:checked {
+    @apply: right-0 border-green-900;
+    right: 0;
+    
+  }
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #6366F1;
+  }
+  .toggle-checkbox {
+    @apply absolute opacity-0 w-0 h-0;
+    position: absolute;
+  }
+ 
+  .toggle-label {
+    @apply block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer relative;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  .dark .toggle-label::after {
+    @apply absolute block h-4 w-4 mt-1 ml-1 rounded-full bg-white shadow transform duration-300 ease-in-out;
+    content: '';
+    position: absolute;
+    background-image: url('../images/icons/dark-mode.svg');
+    transition: transform 0.3s ease-in-out;
+    background-size: 80% 80%; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .toggle-label::after {
+    @apply absolute block h-4 w-4 mt-1 ml-1 rounded-full bg-white shadow transform duration-300 ease-in-out;
+    content: '';
+    position: absolute;
+    background-image: url('../images/icons/light-mode.svg');
+    transition: transform 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 80% 80%; 
+    background-position: center;
+    
+  }
+  .toggle-checkbox:checked + .toggle-label::after {
+    @apply translate-x-4;
+  }
+  input:focus, textarea:focus{
+    outline: 3px solid #6366F1;
+    caret-color: #6366F1;
+  }
+  
+  .email_Btn{
+    background-color: #f4ff7a;
+    margin-left: 1.6rem;
+    padding: 2px 16px 4px 16px;
+    border: 1px solid #000;
+    border-radius: 24px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.15;
+    transition: all .275s ease;
+}
+.github_Btn{
+    background-color: #f4ff7a;
+    margin-left: 1rem;
+    padding: 2px 14px 4px 14px;
+    border: 1px solid #000;
+    border-radius: 24px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.15;
+    transition: all .275s ease;
+}
+
+.github_Btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.email_Btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+    body.dark .github_Btn, body.dark .email_Btn {
+        background-color: #6366F1;
+    }
+    body.dark .email_Btn:hover,  body.dark .github_Btn:hover{
+        background-color: #000 ;
+        color: #ececec;
+    }

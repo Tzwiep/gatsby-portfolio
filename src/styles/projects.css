@@ -19,6 +19,10 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+.dark .link_btn{
+   background-color:  #ececec;
+   color: #232129;
+}
 
 .link_btn:hover {
     box-sizing: border-box;
@@ -100,6 +104,7 @@
         max-width: 6vw;
         display: inline-flex;
         margin: 1rem;
+        align-items: center;
     }
     .link_btn {
         margin-left: 0.5rem;

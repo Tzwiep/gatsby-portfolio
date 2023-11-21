@@ -3,20 +3,21 @@
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #212529;
     margin-top: 1rem;
     margin-left: 1rem;
     font-display: swap;
     }
 #bioText{
         font-size: 0.9rem;
-        font-family: neue-haas-grotesk-text;
-        font-weight: 400;
+        font-family: "source-code-pro", monospace;
+        font-weight: 300;
+        font-style: normal;
         font-display: swap;
     }
 #bioText_Bold{
     font-size: 0.9rem;
-    font-family: neue-haas-grotesk-text;
+    font-family: "source-code-pro", monospace;
+    font-style: normal;
     font-weight: 700;
     font-display: swap;
     }
@@ -34,7 +35,6 @@
             font-family: aktiv-grotesk, sans-serif;
             font-weight: 700;
             font-style: normal;
-            color: #212529;
             justify-content: center;
             margin-left:auto;
             margin-right: auto;

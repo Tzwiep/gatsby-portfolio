@@ -32,7 +32,7 @@
             "title": "HTML"   
           },
           {
-            "order": 7,
+            "order": 14,
             "image": "Java.png",
             "title": "Java"   
           },
@@ -52,7 +52,7 @@
             "title": "Node.js"   
           },
           {
-            "order": 14,
+            "order": 7,
             "image": "PHP.png",
             "title": "PHP"   
           },

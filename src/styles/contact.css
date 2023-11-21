@@ -8,6 +8,9 @@
     margin-left: 33.33%;
     color: #232129;
 }
+.dark .page{
+    background: #232129;
+}
 
 .titleText {
     font-size: 10vw;

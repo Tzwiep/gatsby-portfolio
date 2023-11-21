@@ -124,9 +124,9 @@ const ProjectsPage = () => {
                     <StaticImage src="../images/tech/gatsby.png" alt="Gatsby Icon" className="tech_thumb" />
                     <StaticImage src="../images/tech/react.png" alt="React Icon" className="tech_thumb" />
                     <StaticImage src="../images/tech/tailwind.png" alt="Tailwind CSS Icon" className="tech_thumb" />
-                    <StaticImage src="../images/icons/gatsbyCloud.png" alt="Gatsby Cloud Icon" className="tech_thumb" />
+                    <StaticImage src="../images/icons/logo-vercel.svg" alt="Vercel Icon" className="tech_thumb dark:invert" />
                     </div>
-                    <p className="font-light mt-1 mb-6">This portfolio site was created using <b>Gatsby</b>, <b>React</b>, <b>Tailwind CSS</b>, and is deployed to the <b>Gatsby Cloud</b>.</p>
+                    <p className="font-light mt-1 mb-6">This portfolio site was created using <b>Gatsby</b>, <b>React</b>, <b>Tailwind CSS</b>, and is deployed on <b>Vercel</b>.</p>
                     <a className="link_btn" href="https://github.com/Tzwiep/gatsby-portfolio" target="_blank" rel="noreferrer">View on GitHub</a>
                     </Fade>
                 </div> 
