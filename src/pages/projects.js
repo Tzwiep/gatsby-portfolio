@@ -80,9 +80,13 @@ const ProjectsPage = () => {
 
             <div className="flex-col mt-1">
                 <div className="inline-flex justify-center">
-                <Fade>
+                <Fade className="dark:hidden">
                     <StaticImage src="../images/projects/dictionary.png" alt="Java Dictionary App" className="dictionary" />
                     <StaticImage src="../images/projects/dictionaryResult.png" alt="Java Dictionary App  Word Details" className="dictionary" />
+                    </Fade>
+                    <Fade className="hidden dark:block">
+                    <StaticImage src="../images/projects/dictionary-dark.png" alt="Java Dictionary App" className="dictionary" />
+                    <StaticImage src="../images/projects/dictionaryResult-dark.png" alt="Java Dictionary App  Word Details" className="dictionary" />
                     </Fade>
                 </div>
                 <div className="justify-content-start align-items-center gap-4 md:inline-flex">
