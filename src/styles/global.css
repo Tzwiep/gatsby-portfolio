@@ -26,6 +26,7 @@
   background-color: #d1d5db; /* bg-gray-300 */
   cursor: pointer;
   position: relative;
+  top: 2px;
 }
 
 .dark .toggle-label::after,
