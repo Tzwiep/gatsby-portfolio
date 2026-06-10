@@ -71,7 +71,7 @@ export const query = graphql`
           }
         }
      }
-     allTechnologiesJson(sort: {fields: order}) {
+     allTechnologiesJson(sort: {order: ASC}) {
       edges {
         node {
           title
