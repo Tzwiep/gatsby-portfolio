@@ -1,14 +1,27 @@
 import React, { useState } from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import sassLogo from "../images/tech/sass.svg"
+import gitLogo from "../images/tech/git.svg"
+import githubLogo from "../images/tech/github.svg"
+import wooLogo from "../images/tech/woocommerce.svg"
+import cloudflareLogo from "../images/tech/cloudflare.svg"
+import netlifyLogo from "../images/tech/netlify.svg"
+import vercelLogo from "../images/icons/logo-vercel.svg"
+import linuxLogo from "../images/tech/linux.svg"
+import ga4Logo from "../images/tech/ga4.svg"
+import gtmLogo from "../images/tech/gtm.svg"
+import lookerLogo from "../images/tech/looker-studio.svg"
+import claudeLogo from "../images/tech/claude.svg"
+import codexLogo from "../images/tech/codex.svg"
+import terminalLogo from "../images/tech/terminal.svg"
 
-const foundations = [
-  { group: "Core", items: ["HTML", "CSS / Sass", "JavaScript", "PHP", "SQL", "Git"] },
-  { group: "Web & CMS", items: ["WordPress", "ACF Pro", "WooCommerce", "Gravity Forms", "Shopify", "React"] },
-  { group: "Infrastructure", items: ["Cloudflare", "DNS", "Linux", "Hosting", "SSL", "Migrations", "Performance", "Security"] },
-  { group: "Analytics", items: ["GA4", "Google Tag Manager", "Looker Studio"] },
-  { group: "Other", items: ["REST APIs", "GitHub", "Command line / SSH"] },
-]
-
-const now = ["Claude", "Codex", "Terminal"]
+// Logo tile. StaticImage props must be literal, so each logo is written out below.
+const Tile = ({ label, children, invert = false }) => (
+  <div className="flex flex-col my-2 mx-2 md:my-0 md:mx-6 text-center flex-initial w-20">
+    <div className={`mx-auto mb-2 h-12 flex items-end justify-center ${invert ? "dark:invert" : ""}`}>{children}</div>
+    <p className="font-light text-sm leading-tight">{label}</p>
+  </div>
+)
 
 const tabClass = (active) =>
   "border border-black px-4 py-1 min-w-full md:min-w-0 dark:border-off-white " +
@@ -30,25 +43,49 @@ const Skills = () => {
 
       {showNow ? (
         <div className="mb-8">
-          <ul className="flex flex-row flex-wrap gap-x-10 gap-y-4 text-3xl md:text-5xl font-bold mb-4">
-            {now.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+          <div className="flex flex-row flex-wrap gap-x-12 gap-y-6 mb-6 items-end">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 h-16 flex items-end"><img src={claudeLogo} alt="" width={64} height={64} /></div>
+              <p className="text-2xl md:text-4xl font-bold">Claude</p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 h-16 flex items-end dark:invert"><img src={codexLogo} alt="" width={64} height={64} /></div>
+              <p className="text-2xl md:text-4xl font-bold">Codex</p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 h-16 flex items-end"><img src={terminalLogo} alt="" width={64} height={64} /></div>
+              <p className="text-2xl md:text-4xl font-bold">Terminal</p>
+            </div>
+          </div>
           <p className="font-light">The fundamentals are still doing some work.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-6 mb-8">
-          {foundations.map(({ group, items }) => (
-            <div key={group}>
-              <h3 className="font-bold pb-1 mb-2 border-b border-black dark:border-off-white">{group}</h3>
-              <ul className="font-light">
-                {items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mb-8">
+          <div className="flex flex-row flex-wrap place-content-evenly md:justify-start gap-y-6 mb-6 items-end">
+            <Tile label="HTML"><StaticImage src="../images/tech/HTML.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="CSS"><StaticImage src="../images/tech/CSS.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="JavaScript"><StaticImage src="../images/tech/JavaScript.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="PHP"><StaticImage src="../images/tech/PHP.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="SQL"><StaticImage src="../images/tech/MySQL.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="WordPress" invert><StaticImage src="../images/tech/Wordpress.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="Shopify"><StaticImage src="../images/tech/Shopify.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="React"><StaticImage src="../images/tech/react.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="Sass"><img src={sassLogo} alt="" width={48} height={48} /></Tile>
+            <Tile label="Git"><img src={gitLogo} alt="" width={44} height={44} /></Tile>
+            <Tile label="GitHub" invert><img src={githubLogo} alt="" width={44} height={44} /></Tile>
+            <Tile label="WooCommerce"><img src={wooLogo} alt="" width={48} height={48} /></Tile>
+            <Tile label="Cloudflare"><img src={cloudflareLogo} alt="" width={48} height={48} /></Tile>
+            <Tile label="Netlify"><img src={netlifyLogo} alt="" width={44} height={44} /></Tile>
+            <Tile label="Vercel" invert><img src={vercelLogo} alt="" width={44} height={44} /></Tile>
+            <Tile label="Linux"><img src={linuxLogo} alt="" width={44} height={44} /></Tile>
+            <Tile label="GA4"><img src={ga4Logo} alt="" width={44} height={44} /></Tile>
+            <Tile label="Tag Manager"><img src={gtmLogo} alt="" width={44} height={44} /></Tile>
+            <Tile label="Looker Studio"><img src={lookerLogo} alt="" width={44} height={44} /></Tile>
+          </div>
+          <p className="font-light max-w-prose text-sm">
+            <span className="font-bold">Also:</span> ACF Pro, Gravity Forms, DNS, hosting, SSL, migrations, performance, security,
+            accessibility, REST APIs, command line / SSH.
+          </p>
         </div>
       )}
 

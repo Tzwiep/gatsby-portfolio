@@ -6,11 +6,19 @@ import Seo from "../components/Seo"
 import { Fade } from 'react-awesome-reveal';
 import "../styles/projects.css"
 
-const otherWork = [
-  { name: "Schwartz Legacy Planning Group", url: "https://slpg.ca/", note: "financial planning firm" },
-  { name: "Centre In The Square", url: "https://centreinthesquare.com/", note: "performing arts venue" },
-  { name: "Georgian Triangle Humane Society", url: "https://gths.ca/", note: "animal shelter and nonprofit" },
-]
+// A small thumbnail card used in the Other work and Things I make grids.
+const Thumb = ({ name, note, url, image }) => (
+  <div>
+    <a href={url} target="_blank" rel="noreferrer" className="thumb_link block border border-black dark:border-off-white">
+      {image}
+    </a>
+    <p className="mt-2 leading-snug">
+      <a className="other_link font-bold" href={url} target="_blank" rel="noreferrer">{name}</a>
+      <br />
+      <span className="font-light text-sm">{note}</span>
+    </p>
+  </div>
+)
 
 const earlierWork = [
   { name: "BabySteps", note: "iOS baby-milestone scrapbook app, Swift", url: "https://github.com/Tzwiep/BabySteps" },
@@ -103,7 +111,7 @@ const ProjectsPage = () => {
                 role="Design · Development"
                 attribution="Interkom's own site"
                 tags={["Site architecture", "Web design", "Responsive front end", "WordPress", "Content structure", "Ongoing development"]}
-                image={<StaticImage src="../images/projects/interkom.png" alt="Interkom Work page, with project filters and a featured case study" />}
+                image={<StaticImage src="../images/projects/interkom.png" alt="Interkom homepage featured work section with a grid of project photography" />}
             >
                 <p>
                     I designed and developed Interkom's current website: the site architecture, the visual design, the
@@ -121,7 +129,7 @@ const ProjectsPage = () => {
                 role="Web Development · Ecommerce · Ongoing Support"
                 attribution="Completed at Interkom"
                 tags={["WordPress", "WooCommerce", "Moneris", "Events", "Content", "Ongoing support"]}
-                image={<StaticImage src="../images/projects/maclaren-art-centre.png" alt="MacLaren Art Centre homepage with navigation, an event announcement, and gallery photography" />}
+                image={<StaticImage src="../images/projects/maclaren-art-centre.png" alt="MacLaren Art Centre adult classes and workshops listing, with photos, dates, and prices for each program" />}
             >
                 <p>
                     The MacLaren is a public art gallery with a shop, memberships, classes, and events all running through
@@ -149,32 +157,31 @@ const ProjectsPage = () => {
                 </p>
             </Project>
 
-            <div className="flex-col mt-16 ml-2 md:ml-0 max-w-prose">
+            <div className="flex-col mt-16 ml-2 md:ml-0">
                 <h2 className="font-bold text-2xl pb-2">Other work</h2>
-                <p className="font-light mb-3">A few more sites I've worked on at Interkom.</p>
-                <ul className="font-light">
-                    {otherWork.map(({ name, url, note }) => (
-                        <li key={url} className="mb-1">
-                            <a className="other_link" href={url} target="_blank" rel="noreferrer">{name}</a>
-                            <span> · {note}</span>
-                        </li>
-                    ))}
-                </ul>
+                <p className="font-light mb-4 max-w-prose">A few more sites I've worked on.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <Thumb name="Schwartz Legacy Planning Group" note="Financial planning firm" url="https://slpg.ca/"
+                        image={<StaticImage src="../images/projects/other-slpg.png" alt="Schwartz Legacy Planning Group homepage" />} />
+                    <Thumb name="Centre In The Square" note="Performing arts venue" url="https://centreinthesquare.com/"
+                        image={<StaticImage src="../images/projects/other-centre-in-the-square.png" alt="Centre In The Square homepage with a featured performer" />} />
+                    <Thumb name="Georgian Triangle Humane Society" note="Animal shelter and nonprofit" url="https://gths.ca/"
+                        image={<StaticImage src="../images/projects/other-gths.png" alt="Georgian Triangle Humane Society dogs for adoption page" />} />
+                </div>
             </div>
 
             <h1 className="titleText mt-16">Things I make</h1>
-            <div className="ml-2 md:ml-0 max-w-prose -mt-2">
-                <p className="font-light mb-6">Small projects from outside work. None of these are products. All of them were fun.</p>
+            <div className="ml-2 md:ml-0 -mt-2">
+                <p className="font-light mb-6 max-w-prose">Side projects, a few sites in progress, and experiments. None of these are products yet. All of them are fun.</p>
 
-                <h2 className="font-bold text-2xl pb-1">Tiny Atlas</h2>
-                <p className="text-sm mb-2"><span className="font-bold">Map maker · React · Vite · Ongoing</span></p>
-                <p className="font-light mb-2">
-                    A map-building app, made with my son because he wanted to "make Google Maps." Built with plenty of AI
-                    assistance along the way.
-                </p>
-                <p className="font-light mb-8">
-                    <a className="other_link" href="https://tinyatlas.app/" target="_blank" rel="noreferrer">tinyatlas.app</a>
-                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
+                    <Thumb name="Tiny Atlas" note="Map maker made with my son · React · Vite · ongoing" url="https://tinyatlas.app/"
+                        image={<StaticImage src="../images/projects/tiny-atlas.png" alt="Tiny Atlas homepage with an illustrated map of roads, houses, and a train line" />} />
+                    <Thumb name="Craig Gouweloos" note="Portfolio site for a director and filmmaker · in progress · Netlify" url="https://starlit-squirrel-5db630.netlify.app/"
+                        image={<StaticImage src="../images/projects/craig-gouweloos.png" alt="Craig Gouweloos portfolio homepage with large black type on yellow" />} />
+                    <Thumb name="Ace Contracting" note="Website for a renovation contractor · in progress · Cloudflare Pages" url="https://4aec26bc.ace-contracting.pages.dev/"
+                        image={<StaticImage src="../images/projects/ace-contracting.png" alt="Ace Contracting homepage hero with a renovated bathroom and the headline Spaces made for living" />} />
+                </div>
 
                 <h2 className="font-bold text-2xl pb-1">Fleetwood's Field Guide</h2>
                 <p className="text-sm mb-2"><span className="font-bold">Family project</span></p>

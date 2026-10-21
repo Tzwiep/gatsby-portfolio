@@ -134,3 +134,11 @@
     background-color: #f4ff7a;
     color: #232129;
 }
+
+/* Thumbnail grids (Other work, Things I make) */
+.thumb_link {
+    transition: transform 0.2s ease;
+}
+.thumb_link:hover {
+    transform: translateY(-2px);
+}
