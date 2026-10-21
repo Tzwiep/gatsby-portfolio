@@ -177,7 +177,7 @@ const ProjectsPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
                     <Thumb name="Tiny Atlas" note="Map maker made with my son · React · Vite · ongoing" url="https://tinyatlas.app/"
                         image={<StaticImage src="../images/projects/tiny-atlas.png" alt="Tiny Atlas homepage with an illustrated map of roads, houses, and a train line" />} />
-                    <Thumb name="Craig Gouweloos" note="Portfolio site for a director and filmmaker · in progress · Netlify" url="https://starlit-squirrel-5db630.netlify.app/"
+                    <Thumb name="Craig Gouweloos" note="Portfolio site for a director and filmmaker · Astro · in progress · Netlify" url="https://starlit-squirrel-5db630.netlify.app/"
                         image={<StaticImage src="../images/projects/craig-gouweloos.png" alt="Craig Gouweloos portfolio homepage with large black type on yellow" />} />
                     <Thumb name="Ace Contracting" note="Website for a renovation contractor · in progress · Cloudflare Pages" url="https://4aec26bc.ace-contracting.pages.dev/"
                         image={<StaticImage src="../images/projects/ace-contracting.png" alt="Ace Contracting homepage hero with a renovated bathroom and the headline Spaces made for living" />} />

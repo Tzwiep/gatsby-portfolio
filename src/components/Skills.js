@@ -14,6 +14,8 @@ import lookerLogo from "../images/tech/looker-studio.svg"
 import claudeLogo from "../images/tech/claude.svg"
 import codexLogo from "../images/tech/codex.svg"
 import terminalLogo from "../images/tech/terminal.svg"
+import astroLogo from "../images/tech/astro.svg"
+import nextLogo from "../images/tech/nextjs.svg"
 
 // Logo tile. StaticImage props must be literal, so each logo is written out below.
 const Tile = ({ label, children, invert = false }) => (
@@ -34,10 +36,10 @@ const Skills = () => {
     <div className="mx-4 mb-8">
       <div className="grid grid-cols-2 md:inline-grid md:grid-cols-2 mb-8" role="group" aria-label="Choose which list to show">
         <button type="button" className={tabClass(!showNow)} aria-pressed={!showNow} onClick={() => setShowNow(false)}>
-          Things I know
+          Foundations
         </button>
         <button type="button" className={tabClass(showNow) + " border-l-0"} aria-pressed={showNow} onClick={() => setShowNow(true)}>
-          Things I actually type
+          Now
         </button>
       </div>
 
@@ -70,6 +72,8 @@ const Skills = () => {
             <Tile label="WordPress" invert><StaticImage src="../images/tech/Wordpress.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
             <Tile label="Shopify"><StaticImage src="../images/tech/Shopify.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
             <Tile label="React"><StaticImage src="../images/tech/react.png" alt="" width={48} layout="fixed" placeholder="none" /></Tile>
+            <Tile label="Next.js" invert><img src={nextLogo} alt="" width={44} height={44} /></Tile>
+            <Tile label="Astro"><img src={astroLogo} alt="" width={44} height={44} /></Tile>
             <Tile label="Sass"><img src={sassLogo} alt="" width={48} height={48} /></Tile>
             <Tile label="Git"><img src={gitLogo} alt="" width={44} height={44} /></Tile>
             <Tile label="GitHub" invert><img src={githubLogo} alt="" width={44} height={44} /></Tile>
