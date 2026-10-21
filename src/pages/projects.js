@@ -2,7 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import NavLinks from "../components/navLinks"
 import "../styles/projects.css"
-import { Helmet } from "react-helmet"
+import Seo from "../components/Seo"
 import { Fade } from 'react-awesome-reveal';
 
 
@@ -35,9 +35,6 @@ const ProjectsPage = () => {
     return (
 
         <main className="mx-8 page">
-            <Helmet>
-                <title>Tyler Zwiep | Projects</title>
-            </Helmet>
             <NavLinks />
             <h1 className="titleText">Projects</h1>
 
@@ -142,3 +139,5 @@ const ProjectsPage = () => {
 }
 
 export default ProjectsPage
+
+export const Head = () => <Seo title="Tyler Zwiep | Projects" />

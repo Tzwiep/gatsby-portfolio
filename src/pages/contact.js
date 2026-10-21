@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
+import Seo from "../components/Seo"
 import NavLinks from "../components/navLinks"
 import "../styles/contact.css"
 
@@ -14,9 +14,6 @@ const titleText = {
 const ContactPage = () => {
   return (
     <main className="mx-8 page">
-      <Helmet>
-        <title>Tyler Zwiep | Contact</title>
-      </Helmet>
       <NavLinks />
       <h1 style={titleText}>Contact</h1>
       <div className="px-4 md:px-16 mx-auto">
@@ -48,3 +45,5 @@ const ContactPage = () => {
 }
 
 export default ContactPage
+
+export const Head = () => <Seo title="Tyler Zwiep | Contact" />

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.tylerzwiep.ca",
     title: "TZ Portfolio",
-    description: "Developer Portfolio for Tyler Zwiep. Site created by Tyler using Gatsby, React, Tailwind CSS, and is deployed to the Gatsby Cloud via GitHub."
+    description: "Developer Portfolio for Tyler Zwiep. Site created by Tyler using Gatsby, React, Tailwind CSS, and is deployed to Vercel via GitHub."
   },
   plugins: [
     {
@@ -20,9 +20,7 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",

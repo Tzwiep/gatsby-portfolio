@@ -26,10 +26,11 @@ const ThemeToggle = () => {
         name="toggle" 
         id="toggle" 
         className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-        onClick={() => setDarkMode(!darkMode)}
+        onChange={() => setDarkMode(!darkMode)}
         checked={darkMode}
       />
       <label htmlFor="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer p-3">
+        <span className="sr-only">Toggle dark mode</span>
       </label>
     </div>
   );

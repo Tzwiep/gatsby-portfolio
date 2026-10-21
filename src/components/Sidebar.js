@@ -21,7 +21,7 @@ import * as SidebarStyle from "./Sidebar.module.css"
                 
              </div>
             
-             <div className=" flex-shrink md:mt-4 lg:mt-12 xl:mt:-8 md:border-black md:border-t">
+             <div className=" shrink md:mt-4 lg:mt-12 xl:mt:-8 md:border-black md:border-t">
             <Portrait />
              </div>
              </div>

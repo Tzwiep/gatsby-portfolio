@@ -1,6 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Dark mode is toggled by adding the `dark` class to <body> (see themeToggle.js). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-highlight: #f4ff7a;
+  --color-dark-theme: #232129;
+  --color-off-white: #ececec;
+
+  /* Pin the few palette colours in use to their Tailwind 3 hex values so the
+     v4 oklch palette does not shift them. */
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-indigo-500: #6366f1;
+}
+
+/* Tailwind 3 Preflight behaviour kept for v4: default border colour and
+   pointer cursor on buttons. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
 
 .toggle-checkbox:checked {
   right: 0;

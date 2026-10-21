@@ -12,7 +12,7 @@
   <p align="center">
    View the site
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>www.tylerzwiep.ca »</strong></a>
+    <a href="https://www.tylerzwiep.ca"><strong>www.tylerzwiep.ca »</strong></a>
     <br />
 </div>
 
@@ -27,7 +27,7 @@
 * [Gatsby](https://www.gatsbyjs.com/)
 * [React.js](https://reactjs.org/)
 * [Tailwind CSS](https://tailwindcss.com/)
-* [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)
+* [Vercel](https://vercel.com/)
 </br>
 
 
