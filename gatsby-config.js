@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.tylerzwiep.ca",
-    title: "TZ Portfolio",
-    description: "Developer Portfolio for Tyler Zwiep. Site created by Tyler using Gatsby, React, Tailwind CSS, and is deployed to Vercel via GitHub."
+    title: "Tyler Zwiep — Web Developer",
+    description: "Web developer in Collingwood, Ontario, working across WordPress, ecommerce, design, analytics, hosting, and AI-assisted development, from planning through launch and support."
   },
   plugins: [
     {
@@ -31,15 +31,6 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
-    },
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
-      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

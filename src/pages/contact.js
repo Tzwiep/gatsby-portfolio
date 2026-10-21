@@ -17,6 +17,7 @@ const ContactPage = () => {
       <NavLinks />
       <h1 style={titleText}>Contact</h1>
       <div className="px-4 md:px-16 mx-auto">
+        <p className="font-light mb-8">Open to remote roles and contract work with agencies and teams in Canada and the U.S. If you need one person who can take a website project, or an ongoing web workload, off your plate, get in touch.</p>
         <form action="https://www.flexyform.com/f/6fc6223a49eebe5ac338bdeeea602220be0fadf5" method="POST">
           <label className="text-lg">
             Name
@@ -46,4 +47,4 @@ const ContactPage = () => {
 
 export default ContactPage
 
-export const Head = () => <Seo title="Tyler Zwiep | Contact" />
+export const Head = () => <Seo title="Contact | Tyler Zwiep" description="Get in touch with Tyler Zwiep, web developer, about remote roles, contract work, and website projects." />
